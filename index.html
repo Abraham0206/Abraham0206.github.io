@@ -41,7 +41,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="topbar">
     <div class="topbar-inner"><a class="wordmark" href="#about">XIAOZHE FANG<span class="wordmark-dot">.</span></a>
-      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#background">Background</a><a href="#contact">Contact</a></nav>
+      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#fieldnotes">Field notes</a><a href="#background">Background</a><a href="#contact">Contact</a></nav>
     </div>
   </header>
   <div class="layout">
@@ -63,29 +63,63 @@
         <p>I began studying clinical medicine at Shanghai Jiao Tong University in 2025. After one year, I transferred to biomedical engineering at the same university. Today, I’m exploring <strong>magnetic navigation for surgical robots</strong>, alongside research in multi-robot planning and coordination.</p>
         <p>I’m originally from Luohe, Henan, and now study in Shanghai. I welcome opportunities to join research groups, collaborate on robotics projects, and learn from people working across medicine and engineering.</p>
         <a class="text-link" href="#research">Explore my work <span aria-hidden="true">↓</span></a>
-        <div class="news"><span class="news-tag">RESEARCH NOTE</span><p>Our paper on LLM-guided cooperative navigation has been <strong>accepted at CAC 2026</strong>. <a href="#publication">Read more <span aria-hidden="true">↗</span></a></p></div>
+        <div class="news"><span class="news-tag">RESEARCH NOTE</span><p>Our paper on LLM-guided cooperative navigation has been <strong>accepted and presented at CAC 2026</strong>. <a href="#publication">Read more <span aria-hidden="true">↗</span></a></p></div>
       </section>
       <section id="research" aria-labelledby="research-title">
         <div class="section-title"><h2 id="research-title">Research & projects</h2><span>01 / SELECTED WORK</span></div>
         <article id="publication" class="publication">
-          <div class="publication-topline"><span class="paper-label">CAC 2026</span><span class="status">Accepted · Equal first author</span></div>
+          <div class="publication-topline"><span class="paper-label">CAC 2026</span><span class="status">Accepted · Poster presented · Equal first author</span></div>
           <h3>LLM-Guided Cooperative Navigation<br class="desktop-break"> with Dual-Rate Reactive Control</h3>
           <p class="authors"><strong>Xiaozhe Fang<sup>†</sup></strong>, Kenan Zhang<sup>†</sup>, Mingzhe Yang, Yi Guo, Peng Wang</p>
           <p class="equal-note">† Equal contribution · Chinese Automation Congress, 2026</p>
           <div class="paper-content"><figure><img src="assets/robot-experiment.jpg" width="960" height="570" alt="Mobile robots in the physical navigation experiment, from the accepted manuscript" loading="lazy"><figcaption>Physical multi-robot experiment</figcaption></figure>
           <div><p>How can robots coordinate at a narrow passage while an LLM is still reasoning? Our framework separates slower semantic coordination from faster reactive motion control.</p><p>It combines LLM-guided negotiation with RRT*, DWA, and Discrete Radial Sampling, and evaluates the approach in simulation and on a physical multi-robot platform.</p></div></div>
+          <div class="contribution">
+            <p class="eyebrow">MY HANDS-ON CONTRIBUTION</p>
+            <p>I independently designed the mobile robots, set up the motion-capture system, and carried out the complete physical-robot debugging and experimental workflow for the static-obstacle validation.</p>
+            <ol class="contribution-steps"><li><span>01</span><strong>Robot design</strong><small>Physical mobile platform</small></li><li><span>02</span><strong>Motion capture</strong><small>Experimental setup</small></li><li><span>03</span><strong>On-robot testing</strong><small>Debugging & validation</small></li></ol>
+          </div>
+          <figure class="demo-figure">
+            <video controls playsinline preload="none" poster="assets/media/cac-static-obstacles.jpg" width="1280" height="720" aria-label="CAC research demonstration: physical robots navigating static obstacles" aria-describedby="demo-description"><source src="assets/media/cac-static-obstacles.mp4" type="video/mp4">Your browser does not support embedded video. <a href="assets/media/cac-static-obstacles.mp4">Download the demonstration.</a></video>
+            <figcaption><span class="media-kicker">RESEARCH DEMONSTRATION · 1:34</span><strong>From the planner to the physical robots</strong><span id="demo-description">Physical robot motion alongside the planning visualization. This experiment validates navigation with static obstacles; it does not demonstrate physical dynamic-obstacle avoidance.</span><a href="assets/media/cac-static-obstacles.mp4" download>Download video ↓</a></figcaption>
+          </figure>
           <div class="paper-links"><a href="assets/cooperative-navigation-manuscript.pdf">Read manuscript <span aria-hidden="true">↗</span></a><a href="assets/citation.bib" download>Download BibTeX <span aria-hidden="true">↓</span></a></div>
           <details><summary>Experimental results & scope</summary><div class="detail-content"><p>The manuscript reports a 96.8% navigation success rate in the full-framework ablation experiment. Physical validation achieved 19 successful trials out of 20, with a mean path-tracking error of 0.042 m.</p><p>Physical experiments were limited to static obstacle configurations; dynamic-obstacle validation on the physical platform remains future work.</p></div></details>
         </article>
         <article class="project-row"><div class="project-marker" aria-hidden="true">02</div><div><p class="project-meta">CURRENT RESEARCH</p><h3>Magnetic navigation for surgical robotics</h3><p>My current research direction explores magnetic navigation in surgical robotics, connecting my clinical-medicine background with biomedical engineering and embodied intelligence.</p><p class="topics">Medical robotics / Magnetic navigation / Embodied intelligence</p></div></article>
         <article class="project-row"><div class="project-marker" aria-hidden="true">03</div><div><p class="project-meta">ENGINEERING PROJECT · 2026</p><h3>Intelligent logistics robot</h3><p>A mobile manipulation project combining route execution, QR-based task input, positioning, motor control, and a servo-driven arm for material handling. The project includes a Teensy-based controller and simulation tools for inspecting robot behavior.</p><p class="topics">Embedded control / Mobile manipulation / Programming</p></div></article>
       </section>
+      <section id="fieldnotes" aria-labelledby="fieldnotes-title">
+        <div class="section-title"><h2 id="fieldnotes-title">Conferences & field notes</h2><span>02 / OUTSIDE THE LAB</span></div>
+        <p class="section-intro">Presenting my research, and exploring how robotics and AI are being put into practice.</p>
+        <article class="conference-feature">
+          <a class="photo-link" href="assets/media/cac-poster.jpg" target="_blank" rel="noopener" aria-label="Open CAC 2026 poster presentation photograph in a new tab"><img src="assets/media/cac-poster.jpg" width="1600" height="1202" alt="My CAC 2026 poster presentation, with the original face-covering sticker preserved" loading="lazy"></a>
+          <div class="conference-copy"><p class="eyebrow">CAC 2026 · POSTER PRESENTATION</p><h3>Sharing the work<br> beyond the lab.</h3><p>I presented our work on LLM-guided cooperative navigation at the 2026 China Automation Congress. The poster brings together the planning framework, experimental results, and physical robot validation.</p><a class="text-link" href="#publication">Explore the research ↑</a></div>
+        </article>
+        <article class="exhibition">
+          <div class="exhibition-heading"><div><p class="eyebrow">EXHIBITION VISIT · 2026</p><h3>CMEF · Medical technology up close</h3></div><span class="visit-label">Visitor notes</span></div>
+          <p>Scenes from my visit to CMEF: surgical robotics, ultrasound, and medical imaging equipment. These are technologies I encountered at the exhibition.</p>
+          <div class="photo-grid cmef-grid">
+            <figure><a class="photo-link" href="assets/media/cmef-surgical-robot.jpg" target="_blank" rel="noopener" aria-label="Open surgical robot exhibit photo"><img src="assets/media/cmef-surgical-robot.jpg" alt="Multi-arm surgical robot displayed at CMEF 2026" loading="lazy" width="1200" height="1600"></a><figcaption>Surgical robotics on the exhibition floor</figcaption></figure>
+            <figure><a class="photo-link" href="assets/media/cmef-ultrasound.jpg" target="_blank" rel="noopener" aria-label="Open ultrasound exhibit photo"><img src="assets/media/cmef-ultrasound.jpg" alt="Ultrasound equipment with a three-dimensional visualization on its display" loading="lazy" width="1200" height="1600"></a><figcaption>Ultrasound & visualization</figcaption></figure>
+            <figure><a class="photo-link" href="assets/media/cmef-imaging.jpg" target="_blank" rel="noopener" aria-label="Open medical imaging exhibit photo"><img src="assets/media/cmef-imaging.jpg" alt="Medical imaging scanner displayed at CMEF" loading="lazy" width="1200" height="1600"></a><figcaption>Medical imaging equipment</figcaption></figure>
+          </div>
+        </article>
+        <article class="exhibition">
+          <div class="exhibition-heading"><div><p class="eyebrow">EXHIBITION VISIT · 2026</p><h3>WAIC · AI in the physical world</h3></div><span class="visit-label">Visitor notes</span></div>
+          <p>A few moments from my visit to the World Artificial Intelligence Conference, from computing hardware displays to a mobile robot demonstration.</p>
+          <div class="waic-layout"><div class="photo-grid waic-photos">
+            <figure><a class="photo-link" href="assets/media/waic-venue.jpg" target="_blank" rel="noopener" aria-label="Open WAIC venue photo"><img src="assets/media/waic-venue.jpg" alt="Exterior of the WAIC 2026 exhibition venue" loading="lazy" width="1600" height="1200"></a><figcaption>WAIC 2026 · At the venue</figcaption></figure>
+            <figure><a class="photo-link" href="assets/media/waic-computing.jpg" target="_blank" rel="noopener" aria-label="Open computing hardware exhibit photo"><img src="assets/media/waic-computing.jpg" alt="Computing hardware and connected circuitry in an exhibition display case" loading="lazy" width="1600" height="1200"></a><figcaption>A closer look at computing hardware</figcaption></figure>
+          </div><figure class="exhibition-video"><video controls playsinline preload="none" poster="assets/media/waic-robot-demo.jpg" width="720" height="1280" aria-label="Mobile robot exhibit at WAIC 2026" aria-describedby="waic-description"><source src="assets/media/waic-robot-demo.mp4" type="video/mp4">Your browser does not support embedded video. <a href="assets/media/waic-robot-demo.mp4">Download this clip.</a></video><figcaption id="waic-description">A mobile robot demonstration at WAIC. Exhibition footage; not my own research platform.</figcaption></figure></div>
+        </article>
+      </section>
       <section id="background" aria-labelledby="background-title">
-        <div class="section-title"><h2 id="background-title">Background</h2><span>02 / LEARNING & BUILDING</span></div>
+        <div class="section-title"><h2 id="background-title">Background</h2><span>03 / LEARNING & BUILDING</span></div>
         <div class="background-grid"><div><h3 class="subheading">Education</h3><div class="timeline-item"><span class="year">2026 — PRESENT</span><h4>Shanghai Jiao Tong University</h4><p>Undergraduate, Biomedical Engineering</p></div><div class="timeline-item"><span class="year">2025 — 2026</span><h4>Shanghai Jiao Tong University</h4><p>Undergraduate studies in Clinical Medicine<br>Transferred to Biomedical Engineering after one year.</p></div></div>
         <div><h3 class="subheading">Honors</h3><div class="honor"><span class="honor-mark" aria-hidden="true">✦</span><div><h4>Meritorious Winner</h4><p>Mathematical Contest in Modeling (MCM)<br>2026</p></div></div><div class="honor"><span class="honor-mark" aria-hidden="true">✦</span><div><h4>First Prize · University Round</h4><p>National Undergraduate Engineering Practice & Innovation Competition</p></div></div><p class="skill-line"><strong>Hands-on skills</strong><br>Programming & electrical control</p></div></div>
       </section>
-      <section class="beyond" aria-labelledby="beyond-title"><div class="section-title"><h2 id="beyond-title">Beyond the lab</h2><span>03 / A LITTLE MORE</span></div><p>Outside my studies, I enjoy playing the <strong>violin</strong> and <strong>basketball</strong>. I’m always happy to meet new people, whether through research, music, or a game on the court.</p></section>
+      <section class="beyond" aria-labelledby="beyond-title"><div class="section-title"><h2 id="beyond-title">Beyond the lab</h2><span>04 / A LITTLE MORE</span></div><p>Outside my studies, I enjoy playing the <strong>violin</strong> and <strong>basketball</strong>. I’m always happy to meet new people, whether through research, music, or a game on the court.</p></section>
       <section id="contact" class="contact" aria-labelledby="contact-title"><p class="eyebrow">LET’S CONNECT</p><h2 id="contact-title">Good work starts with a conversation.</h2><p>For research opportunities, robotics collaborations, or simply to say hello.</p><div class="contact-actions"><a class="email-link" href="mailto:Abraham0206@sjtu.edu.cn">Abraham0206@sjtu.edu.cn <span aria-hidden="true">↗</span></a><button id="copy-email" type="button" hidden>Copy email</button></div><span id="copy-status" class="copy-status" role="status" aria-live="polite"></span></section>
       <footer><span>© 2026 Xiaozhe Fang</span><a href="https://github.com/Abraham0206">GitHub</a><a href="#about">Back to top ↑</a></footer>
     </main>

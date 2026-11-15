@@ -24,3 +24,11 @@ if ('IntersectionObserver' in window) {
   }, { rootMargin: '-15% 0px -65% 0px' });
   sections.forEach(section => observer.observe(section));
 }
+
+// Stop hidden research media when readers collapse the project details.
+const publicationDetails = document.querySelector('.publication-details');
+publicationDetails?.addEventListener('toggle', () => {
+  if (!publicationDetails.open) {
+    publicationDetails.querySelectorAll('video').forEach(video => video.pause());
+  }
+});

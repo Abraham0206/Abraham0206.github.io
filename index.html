@@ -67,9 +67,17 @@
       </section>
       <section id="research" aria-labelledby="research-title">
         <div class="section-title"><h2 id="research-title">Research & projects</h2><span>01 / SELECTED WORK</span></div>
-        <article id="publication" class="publication">
+        <article id="publication" class="project-row cac-project">
+          <div class="project-marker" aria-hidden="true">01</div>
+          <div>
+            <p class="project-meta">CAC 2026 · ACCEPTED · EQUAL FIRST AUTHOR</p>
+            <h3>LLM-Guided Cooperative Navigation with Dual-Rate Reactive Control</h3>
+            <p>A multi-robot navigation framework that combines LLM-guided negotiation with fast reactive control. I designed and tested the physical robot platform for static obstacle avoidance, and conducted simulations of dynamic obstacle avoidance and inter-robot coordination.</p>
+            <p class="topics">Multi-robot coordination / LLM-guided planning / Sim-to-real</p>
+            <details class="publication-details">
+              <summary>Paper details, contributions &amp; demo</summary>
+              <div class="publication">
           <div class="publication-topline"><span class="paper-label">CAC 2026</span><span class="status">Accepted · Poster presented · Equal first author</span></div>
-          <h3>LLM-Guided Cooperative Navigation<br class="desktop-break"> with Dual-Rate Reactive Control</h3>
           <p class="authors"><strong>Xiaozhe Fang<sup>†</sup></strong>, Kenan Zhang<sup>†</sup>, Mingzhe Yang, Yi Guo, Peng Wang</p>
           <p class="equal-note">† Equal contribution · Chinese Automation Congress, 2026</p>
           <div class="paper-content"><figure><img src="assets/robot-experiment.jpg" width="960" height="570" alt="Mobile robots in the physical navigation experiment, from the accepted manuscript" loading="lazy"><figcaption>Physical multi-robot experiment</figcaption></figure>
@@ -84,7 +92,10 @@
             <figcaption><span class="media-kicker">RESEARCH DEMONSTRATION · 0:39</span><strong>From the planner to the physical robots</strong><span id="demo-description">Physical robot motion alongside the planning visualization. This experiment validates navigation with static obstacles; it does not demonstrate physical dynamic-obstacle avoidance.</span><a href="assets/media/cac-static-obstacles.mp4?v=20261113-cac2" download>Download video ↓</a></figcaption>
           </figure>
           <div class="paper-links"><a href="assets/cooperative-navigation-manuscript.pdf?v=20261113-cac2">Read manuscript <span aria-hidden="true">↗</span></a><a href="assets/citation.bib" download>Download BibTeX <span aria-hidden="true">↓</span></a></div>
-          <details><summary>Experimental results & scope</summary><div class="detail-content"><p>The manuscript reports a 96.8% navigation success rate in the full-framework ablation experiment. Physical validation achieved 19 successful trials out of 20, with a mean path-tracking error of 0.042 m.</p><p>Physical experiments were limited to static obstacle configurations; dynamic-obstacle validation on the physical platform remains future work.</p></div></details>
+          <div class="experiment-scope"><h4>Experimental results & scope</h4><div class="detail-content"><p>The manuscript reports a 96.8% navigation success rate in the full-framework ablation experiment. Physical validation achieved 19 successful trials out of 20, with a mean path-tracking error of 0.042 m.</p><p>Physical experiments were limited to static obstacle configurations; dynamic-obstacle validation on the physical platform remains future work.</p></div></div>
+              </div>
+            </details>
+          </div>
         </article>
         <article class="project-row"><div class="project-marker" aria-hidden="true">02</div><div><p class="project-meta">CURRENT RESEARCH</p><h3>Magnetic navigation for surgical robotics</h3><p>My current research direction explores magnetic navigation in surgical robotics, connecting my clinical-medicine background with biomedical engineering and embodied intelligence.</p><p class="topics">Medical robotics / Magnetic navigation / Embodied intelligence</p></div></article>
         <article class="project-row"><div class="project-marker" aria-hidden="true">03</div><div><p class="project-meta">ENGINEERING PROJECT · 2026</p><h3>Intelligent logistics robot</h3><p>A mobile manipulation project combining route execution, QR-based task input, positioning, motor control, and a servo-driven arm for material handling. The project includes a Teensy-based controller and simulation tools for inspecting robot behavior.</p><p class="topics">Embedded control / Mobile manipulation / Programming</p></div></article>
